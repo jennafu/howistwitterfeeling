@@ -10,4 +10,6 @@ Python Packages Used:
 - NLTK
 - Tweepy (Twitter API)
 
+*See project overview for details
+
 (Web app in development...)
