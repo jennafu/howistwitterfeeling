@@ -26,7 +26,7 @@ It contains the following 6 fields:
 - flag: The query (lyx). If there is no query, then this value is NO_QUERY.
 - user: the user that tweeted (robotickilldozr)
 - text: the text of the tweet (Lyx is cool)
-<img src="jupyter notebook/image/raw_data.jpg">
+<img src="jupyter notebook/image/raw_data">
 
 Then, I have chosen to use Tweepy, an open source Python package for accessing Twitter API, to livestream my tweets. The reason why I want to use Tweepy is because otherwise I might have to deal with low-level details like HTTP requests, data serialization, rate limits, etc. So Tweepy definitely makes the process a lot easier. The tweets are pulled using the tweepy.Cursor() method, which enables me to specify:
 text_query : the Twitter topic I’m interested in
