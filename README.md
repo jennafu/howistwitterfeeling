@@ -26,7 +26,7 @@ It contains the following 6 fields:
 - flag: The query (lyx). If there is no query, then this value is NO_QUERY.
 - user: the user that tweeted (robotickilldozr)
 - text: the text of the tweet (Lyx is cool)
-<img src="jupyter notebook/image/raw_data">
+<img src="jupyter notebook/image/raw_data.png">
 
 Then, I have chosen to use Tweepy, an open source Python package for accessing Twitter API, to livestream my tweets. The reason why I want to use Tweepy is because otherwise I might have to deal with low-level details like HTTP requests, data serialization, rate limits, etc. So Tweepy definitely makes the process a lot easier. The tweets are pulled using the tweepy.Cursor() method, which enables me to specify:
 text_query : the Twitter topic I’m interested in
@@ -36,7 +36,7 @@ since_date and until_date : the time period I want the retrieved tweets to fall 
 max_tweets : the number of tweets I want to retrieve
 
 Then, the date and contents of the retrieved tweets are placed into a dataframe, where I would apply further feature engineering upon.
-<img src="jupyter notebook/image/twitter_data.jpg">
+<img src="jupyter notebook/image/twitter_data.png">
 
 
 ## Data Preprocess and Vectorization
@@ -73,7 +73,7 @@ With the reduced dataset, there are four models I want to attempt to train my mo
 - DecisionTreeClassifier
 - KNeighborsClassifier
 With an initial model selection, comparing the train accuracy, test accuracy and CV training accuracy:
-<img src="jupyter notebook/image/reduced_accuracy.jpg">
+<img src="jupyter notebook/image/reduced_accuracy.png">
 
 I have chosen to proceed with the LinearSVC and LogisticRegression for further modelling. These are the hyperparameters I have chosen to tune in the two models:
 - LogisticRegression: Penalty (to compare regularization techniques) and regularization parameter C
