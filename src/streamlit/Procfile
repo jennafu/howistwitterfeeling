@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run betterreads.py
+web: sh setup.sh && streamlit run howistwitterfeeling.py
