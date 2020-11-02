@@ -85,7 +85,3 @@ Model with Incremental Learning:
 After deriving the appropriate model and hyperparameters for the reduced dataset, I will apply them in a model using incremental learning as well, to train my model based on more data. Given the restriction in the memory on my local computer, incremental learning techniques can be used where data is processed in parts(subsets of the data are considered at any given point in time) and the result is then combined to save memory.I have used the SGDClassifier, which is capable of implementing regularized linear models, like the logistics and SVM, with stochastic gradient descent learning, as the gradient of loss is estimated each sample at a time and the model is updated along the way.
 
 After fitting the entire dataset, I only received a test accuracy of 50.09% from the model. Hence, for now, for the prediction of sentiment, I will use the model fitted with the reduced dataset. However, this also means that I have underutilized my dataset, leading to some degrees of loss of information. So I will definitely be looking into how I can optimize the performance of my models based on incremental learning.
-
-
-## Results
-(Web App in Development...)
