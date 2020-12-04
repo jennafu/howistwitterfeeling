@@ -1,1 +1,1 @@
-web: gunicorn hello:app
+web: streamlit run howistwitterfeeling.py
