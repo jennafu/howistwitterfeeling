@@ -73,6 +73,7 @@ With the reduced dataset, there are four models I want to attempt to train my mo
 - LinearSVC
 - DecisionTreeClassifier
 - KNeighborsClassifier
+
 With an initial model selection, comparing the train accuracy, test accuracy and CV training accuracy:
 <img src="jupyter notebook/image/reduced_accuracy.png">
 
@@ -80,9 +81,9 @@ I have chosen to proceed with the LinearSVC and LogisticRegression for further m
 - LogisticRegression: Penalty (to compare regularization techniques) and regularization parameter C
 - LinearSVC: class_weight (due to the high false negative and low recall rate) and regularization parameter C (for SVM structural risk minimization)
 
-After tuning the respective hyperparameters, the best model appears to be the LinearSVC model with C = 1 and class_weight = {-1: 1, 1: 5}, with a train accuracy of 0.7856125 and test accuracy of 0.7484 and a much better recall rate (0.732). Hence, this model is pickled for sentiment analysis of the real-time tweets.
+After tuning the respective hyperparameters, the best model appears to be the LinearSVC model with C = 1 and class_weight = {-1: 1, 1: 5}, with a train accuracy of **78.56%** and test accuracy of **74.84%** and a much better recall rate (0.732). Hence, this model is pickled for sentiment analysis of the real-time tweets.
 
 Model with Incremental Learning:
 After deriving the appropriate model and hyperparameters for the reduced dataset, I will apply them in a model using incremental learning as well, to train my model based on more data. Given the restriction in the memory on my local computer, incremental learning techniques can be used where data is processed in parts(subsets of the data are considered at any given point in time) and the result is then combined to save memory.I have used the SGDClassifier, which is capable of implementing regularized linear models, like the logistics and SVM, with stochastic gradient descent learning, as the gradient of loss is estimated each sample at a time and the model is updated along the way.
 
-After fitting the entire dataset, I only received a test accuracy of 50.09% from the model. Hence, for now, for the prediction of sentiment, I will use the model fitted with the reduced dataset. However, this also means that I have underutilized my dataset, leading to some degrees of loss of information. So I will definitely be looking into how I can optimize the performance of my models based on incremental learning.
+After fitting the entire dataset, I only received a test accuracy of **50.09%** from the model. Hence, for now, for the prediction of sentiment, I will use the model fitted with the reduced dataset. However, this also means that I have underutilized my dataset, leading to some degrees of loss of information. So I will definitely be looking into how I can optimize the performance of my models based on incremental learning.
