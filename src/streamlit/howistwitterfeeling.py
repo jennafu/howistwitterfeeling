@@ -26,7 +26,7 @@ import matplotlib.pyplot as pPlot
 from wordcloud import WordCloud
 
 from PIL import Image
-image = Image.open('image/morning-brew-V6CdmV277nY-unsplash.jpg')
+image = Image.open('src/streamlit/image/morning-brew-V6CdmV277nY-unsplash.jpg')
 st.image(image,use_column_width=True)
 # st.title('How is Twitter Feeling About...')
 
