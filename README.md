@@ -36,6 +36,7 @@ since_date and until_date : the time period I want the retrieved tweets to fall 
 max_tweets : the number of tweets I want to retrieve
 
 Then, the date and contents of the retrieved tweets are placed into a dataframe, where I would apply further feature engineering upon.
+
 <img src="jupyter notebook/image/twitter_data.png">
 
 
