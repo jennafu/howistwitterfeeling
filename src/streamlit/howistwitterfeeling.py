@@ -123,7 +123,7 @@ tweets_df['text'] = tweets_df['text'].apply(clean)
 
 # Load features from training dataset
 transformer = TfidfTransformer()
-loaded_features = pickle.load(open("pickle/reduced_new_feature.pkl", "rb"))
+loaded_features = pickle.load(open("src/streamlit/pickle/reduced_new_feature.pkl", "rb"))
 
 # Vectorize the text column
 X_text = tweets_df['text'].astype(str)
