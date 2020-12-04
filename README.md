@@ -89,5 +89,5 @@ Python Packages Used:
 - Tweepy (Twitter API)
 
 ## Sentimental Analysis App
-<img src="jupyter notebook/image/app_demo.jpg">
+<img src="jupyter notebook/image/app_demo.png">
 https://howistwitterfeeling.herokuapp.com/
