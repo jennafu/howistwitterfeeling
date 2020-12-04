@@ -140,7 +140,7 @@ X_text = transformer.fit_transform(tfidfconverter.fit_transform(X_text))
 X_sample = pd.DataFrame(columns=tfidfconverter.get_feature_names(),data=X_text.toarray())
 
 # Load trained model
-filename = 'pickle/svc_new_model.sav'
+filename = 'src/streamlit/pickle/svc_new_model.sav'
 sgd_model = pickle.load(open(filename, 'rb'))
 
 # Prediction
