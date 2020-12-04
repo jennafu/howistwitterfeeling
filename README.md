@@ -87,3 +87,6 @@ Python Packages Used:
 - Scikit-Learn
 - NLTK
 - Tweepy (Twitter API)
+
+## Sentimental Analysis App
+https://howistwitterfeeling.herokuapp.com/
