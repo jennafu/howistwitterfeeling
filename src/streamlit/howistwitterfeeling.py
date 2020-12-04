@@ -261,7 +261,7 @@ st.text('The word cloud below represents the words or phrases from tweets \n'
 'associated with positive and negative senitments accordingly.')
 
 # Create the word cloud
-bird = np.array(Image.open('image/twitter_mask.png'))
+bird = np.array(Image.open('src/streamlit/image/twitter_mask.png'))
 fig, (ax2, ax3) = plt.subplots(1, 2, figsize=[30, 15])
 wordcloud2 = WordCloud( background_color='white',mask=bird,colormap="Reds",
                         width=600,stopwords=option,
