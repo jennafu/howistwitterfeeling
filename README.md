@@ -1,14 +1,6 @@
 # #howistwitterfeeling
 <img src="jupyter notebook/image/morning-brew-V6CdmV277nY-unsplash.jpg">
 
-Python Packages Used:
-- Numpy
-- Pandas
-- Matplotlib
-- Scikit-Learn
-- NLTK
-- Tweepy (Twitter API)
-
 ## Background and Problem Statement
 Twitter is a platform used by millions of users everyday to share their unfiltered opinion, follow public figures and the news. While it is a quick and convenient source of information, it is also known as a place of dispute and disagreements. Given the massive quantity of contents posted on the platform regarding different topics everyday, it could be difficult to keep track of how users are actually perceiving a specific topic or issue. Like many other social media data, Twitter data is unstructured, hence another challenge working with them, would be how should automatize the data cleaning and preprocessing process.
 
@@ -87,3 +79,11 @@ Model with Incremental Learning:
 After deriving the appropriate model and hyperparameters for the reduced dataset, I will apply them in a model using incremental learning as well, to train my model based on more data. Given the restriction in the memory on my local computer, incremental learning techniques can be used where data is processed in parts(subsets of the data are considered at any given point in time) and the result is then combined to save memory.I have used the SGDClassifier, which is capable of implementing regularized linear models, like the logistics and SVM, with stochastic gradient descent learning, as the gradient of loss is estimated each sample at a time and the model is updated along the way.
 
 After fitting the entire dataset, I only received a test accuracy of **50.09%** from the model. Hence, for now, for the prediction of sentiment, I will use the model fitted with the reduced dataset. However, this also means that I have underutilized my dataset, leading to some degrees of loss of information. So I will definitely be looking into how I can optimize the performance of my models based on incremental learning.
+
+Python Packages Used:
+- Numpy
+- Pandas
+- Matplotlib
+- Scikit-Learn
+- NLTK
+- Tweepy (Twitter API)
